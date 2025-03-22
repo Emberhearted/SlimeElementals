@@ -1,8 +1,9 @@
-[gd_scene load_steps=32 format=3 uid="uid://b7u8wwmmps4gu"]
+[gd_scene load_steps=33 format=3 uid="uid://b7u8wwmmps4gu"]
 
 [ext_resource type="Texture2D" uid="uid://cqb1ksryta8aa" path="res://Assets/Sprites_Elementals/BlobIdleSpriteSheet.png" id="1_8303f"]
 [ext_resource type="Script" uid="uid://bxv1vrxt5cy57" path="res://Scripts/player.gd" id="1_cr8r3"]
 [ext_resource type="Texture2D" uid="uid://d344lj2vqihq3" path="res://Assets/BlobJumpSpriteSheet2.png" id="3_gntrk"]
+[ext_resource type="PackedScene" uid="uid://f8n3guvnhcyx" path="res://Scenes/ui.tscn" id="4_dewec"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_thuyx"]
 atlas = ExtResource("1_8303f")
@@ -143,7 +144,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 15.0
+"speed": 30.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -172,7 +173,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"jumpLanding",
-"speed": 45.0
+"speed": 30.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -201,25 +202,31 @@ animations = [{
 }],
 "loop": false,
 "name": &"jumpTakeOff",
-"speed": 45.0
+"speed": 30.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uj3p1"]
 radius = 4.3735
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(0, -7)
 script = ExtResource("1_cr8r3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -7)
 scale = Vector2(0.4375, 0.4375)
 sprite_frames = SubResource("SpriteFrames_xfpg8")
 animation = &"jumpTakeOff"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.0383959, 2.57575)
+position = Vector2(-0.038, -4.424)
 shape = SubResource("CircleShape2D_uj3p1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
+
+[node name="UI" parent="." instance=ExtResource("4_dewec")]
+offset_left = -229.0
+offset_top = -129.0
+offset_right = -229.0
+offset_bottom = -129.0

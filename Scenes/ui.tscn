@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://f8n3guvnhcyx"]
+
+[ext_resource type="FontFile" uid="uid://bpaup1o7ekxew" path="res://Assets/RetroislandRegular-nAvvP.otf" id="1_jxero"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qdvrb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nf4gj"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -7.0
+offset_right = 159.0
+offset_bottom = 47.0
+theme_override_fonts/font = ExtResource("1_jxero")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qdvrb")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_nf4gj")
+text = "Score:"

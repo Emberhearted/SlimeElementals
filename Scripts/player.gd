@@ -5,7 +5,7 @@ extends CharacterBody2D
 var wasInAir: bool = false
 
 const speed = 150.0
-const jumpVelocity = -275.0
+const jumpVelocity = -300.0
 
 
 func _physics_process(delta: float) -> void:
@@ -17,9 +17,11 @@ func _physics_process(delta: float) -> void:
 	# Checks if you have just landed
 		wasInAir = true
 		
-	if is_on_floor():
+	elif is_on_floor():
 		if wasInAir:
 			on_land()
+		else:
+			pass
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
@@ -40,3 +42,4 @@ func _physics_process(delta: float) -> void:
 func on_land():
 	animation.play("jumpLanding")
 	wasInAir = false
+	#animation.play("idle")
