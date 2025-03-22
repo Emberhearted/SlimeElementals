@@ -5,14 +5,13 @@ extends CharacterBody2D
 var wasInAir: bool = false
 
 const speed = 150.0
-const jumpVelocity = -300.0
+const jumpVelocity = -275.0
 
 
 func _physics_process(delta: float) -> void:
-	print(wasInAir)
 	# Add the gravity.
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		velocity.y += global.gravity * delta
 		if not wasInAir:
 			animation.play("jumpTakeOff")
 	# Checks if you have just landed
