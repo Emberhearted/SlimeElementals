@@ -7,7 +7,6 @@ var wasInAir: bool = false
 const speed = 150.0
 const jumpVelocity = -300.0
 
-
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -42,4 +41,6 @@ func _physics_process(delta: float) -> void:
 func on_land():
 	animation.play("jumpLanding")
 	wasInAir = false
-	#animation.play("idle")
+	await animation.animation_finished
+	if animation.animation == "jumpLanding":
+		animation.play("idle")
