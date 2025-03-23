@@ -19,8 +19,6 @@ func _physics_process(delta: float) -> void:
 	elif is_on_floor():
 		if wasInAir:
 			on_land()
-		else:
-			pass
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
