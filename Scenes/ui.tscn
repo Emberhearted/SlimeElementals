@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://f8n3guvnhcyx"]
 
-[ext_resource type="FontFile" uid="uid://bpaup1o7ekxew" path="res://Assets/RetroislandRegular-nAvvP.otf" id="1_jxero"]
-[ext_resource type="Texture2D" uid="uid://paj72c87kofv" path="res://Assets/UI/HeartIcon.png" id="2_qdvrb"]
+[ext_resource type="FontFile" uid="uid://bpaup1o7ekxew" path="res://assets/RetroislandRegular-nAvvP.otf" id="1_jxero"]
+[ext_resource type="Texture2D" uid="uid://paj72c87kofv" path="res://assets/slimeElementalAssets/UI/HeartIcon.png" id="2_qdvrb"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qdvrb"]
 
@@ -15,7 +15,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextEdit" type="TextEdit" parent="."]
+[node name="Score" type="TextEdit" parent="."]
 layout_mode = 0
 offset_left = 1.0
 offset_top = -7.0

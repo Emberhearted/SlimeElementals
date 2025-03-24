@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://lyaawodqx8yv"]
 
-[ext_resource type="Script" uid="uid://c3hr8s4iuen7c" path="res://Scripts/player_v_2.gd" id="1_3lgj3"]
-[ext_resource type="Texture2D" uid="uid://bxkradklfwn0d" path="res://Assets/Sprites_Elementals/SlimeIdleAnimation-Sheet.png" id="1_isv6t"]
+[ext_resource type="Script" uid="uid://c3hr8s4iuen7c" path="res://scripts/player_v_2.gd" id="1_3lgj3"]
+[ext_resource type="Texture2D" uid="uid://bxkradklfwn0d" path="res://assets/slimeElementalAssets/sprites/SlimeIdleAnimation-Sheet.png" id="1_isv6t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3lgj3"]
 atlas = ExtResource("1_isv6t")
@@ -37,7 +37,7 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_it73d"]
 
-[node name="PlayerV2" type="CharacterBody2D"]
+[node name="PlayerV2" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_3lgj3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

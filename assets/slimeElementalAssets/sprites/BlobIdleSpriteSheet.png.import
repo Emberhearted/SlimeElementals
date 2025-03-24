@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d344lj2vqihq3"
-path="res://.godot/imported/BlobJumpSpriteSheet2.png-bb7284b762bf3d25bfd65948004df29e.ctex"
+uid="uid://cqb1ksryta8aa"
+path="res://.godot/imported/BlobIdleSpriteSheet.png-01a811a74855882d55e24559f769c62f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/BlobJumpSpriteSheet2.png"
-dest_files=["res://.godot/imported/BlobJumpSpriteSheet2.png-bb7284b762bf3d25bfd65948004df29e.ctex"]
+source_file="res://assets/slimeElementalAssets/sprites/BlobIdleSpriteSheet.png"
+dest_files=["res://.godot/imported/BlobIdleSpriteSheet.png-01a811a74855882d55e24559f769c62f.ctex"]
 
 [params]
 

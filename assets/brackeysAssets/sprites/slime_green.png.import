@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d344lj2vqihq3"
-path="res://.godot/imported/BlobJumpSpriteSheet2.png-bb7284b762bf3d25bfd65948004df29e.ctex"
+uid="uid://b6v0n0eaivfcy"
+path="res://.godot/imported/slime_green.png-3e7732af1829ec869d0ecbe6961220a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/BlobJumpSpriteSheet2.png"
-dest_files=["res://.godot/imported/BlobJumpSpriteSheet2.png-bb7284b762bf3d25bfd65948004df29e.ctex"]
+source_file="res://assets/brackeysAssets/sprites/slime_green.png"
+dest_files=["res://.godot/imported/slime_green.png-3e7732af1829ec869d0ecbe6961220a0.ctex"]
 
 [params]
 
