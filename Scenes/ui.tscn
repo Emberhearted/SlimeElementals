@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://f8n3guvnhcyx"]
+[gd_scene load_steps=5 format=3 uid="uid://f8n3guvnhcyx"]
 
 [ext_resource type="FontFile" uid="uid://bpaup1o7ekxew" path="res://Assets/RetroislandRegular-nAvvP.otf" id="1_jxero"]
+[ext_resource type="Texture2D" uid="uid://paj72c87kofv" path="res://Assets/UI/HeartIcon.png" id="2_qdvrb"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qdvrb"]
 
@@ -25,3 +26,59 @@ theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxEmpty_qdvrb")
 theme_override_styles/read_only = SubResource("StyleBoxEmpty_nf4gj")
 text = "Score:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 271.0
+offset_right = 137.0
+offset_bottom = 287.0
+theme_override_constants/separation = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_qdvrb")
+expand_mode = 2
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_qdvrb")
+expand_mode = 2
+stretch_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_qdvrb")
+expand_mode = 2
+stretch_mode = 2
+
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_qdvrb")
+expand_mode = 2
+stretch_mode = 2
+
+[node name="TextureRect5" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_qdvrb")
+expand_mode = 2
+stretch_mode = 2
+
+[node name="TextureRect6" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_qdvrb")
+expand_mode = 2
+stretch_mode = 2
+
+[node name="TextureRect7" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_qdvrb")
+expand_mode = 2
+stretch_mode = 2
+
+[node name="TextureRect8" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_qdvrb")
+expand_mode = 2
+stretch_mode = 2

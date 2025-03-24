@@ -377,14 +377,13 @@ sprite_frames = SubResource("SpriteFrames_xfpg8")
 animation = &"jumpLanding"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.038, -4.424)
+position = Vector2(-0.038, -4.35)
 shape = SubResource("CircleShape2D_uj3p1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
 
 [node name="UI" parent="." instance=ExtResource("4_dewec")]
-offset_left = -229.0
-offset_top = -129.0
-offset_right = -229.0
-offset_bottom = -129.0
+offset_left = -256.0
+offset_top = -144.0
+offset_right = -256.0
+offset_bottom = -144.0
