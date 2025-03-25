@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://71n4r8ymqvxx"
-path="res://.godot/imported/fruit.png-714da84e322deeab76ffd9a126d3fc87.ctex"
+uid="uid://bxagmm1eajpce"
+path="res://.godot/imported/SlimeIdleAndTurn-Sheet.png-0c7624bd5bfcdff83669b6d7d3a092d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/brackeysAssets/sprites/fruit.png"
-dest_files=["res://.godot/imported/fruit.png-714da84e322deeab76ffd9a126d3fc87.ctex"]
+source_file="res://Assets/slimeElementalAssets/sprites/SlimeIdleAndTurn-Sheet.png"
+dest_files=["res://.godot/imported/SlimeIdleAndTurn-Sheet.png-0c7624bd5bfcdff83669b6d7d3a092d4.ctex"]
 
 [params]
 
