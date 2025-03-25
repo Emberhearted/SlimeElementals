@@ -50,7 +50,6 @@ atlas = ExtResource("1_8303f")
 region = Rect2(32, 64, 32, 32)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dqkch"]
-load_path = "res://.godot/imported/BlobJumpSpriteSheet2.png-bb7284b762bf3d25bfd65948004df29e.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
 atlas = SubResource("CompressedTexture2D_dqkch")

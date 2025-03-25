@@ -285,7 +285,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"LandLeft",
-"speed": 5.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -305,7 +305,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"LandRight",
-"speed": 5.0
+"speed": 20.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_it73d"]
@@ -315,7 +315,7 @@ script = ExtResource("1_3lgj3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_it73d")
-animation = &"LandRight"
+animation = &"LandLeft"
 autoplay = "IdleBlink"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
