@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvuuq0g45bu4j"
-path="res://.godot/imported/SlimeJumpRight-Sheet.png-ae5cf72c33ce35bf3a7a91d8c90e08d0.ctex"
+path="res://.godot/imported/SlimeJumpRight-Sheet.png-d883c3fec7f3c848f8aead8b2bfbf3c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/slimeElementalAssets/sprites/SlimeJumpRight-Sheet.png"
-dest_files=["res://.godot/imported/SlimeJumpRight-Sheet.png-ae5cf72c33ce35bf3a7a91d8c90e08d0.ctex"]
+source_file="res://assets/slimeElementalAssets/sprites/SlimeJumpRight-Sheet.png"
+dest_files=["res://.godot/imported/SlimeJumpRight-Sheet.png-d883c3fec7f3c848f8aead8b2bfbf3c2.ctex"]
 
 [params]
 

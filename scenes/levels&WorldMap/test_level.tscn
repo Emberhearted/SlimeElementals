@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=4 uid="uid://duablkg84ongt"]
 
 [ext_resource type="Texture2D" uid="uid://cnwbbqee5v0rx" path="res://assets/brackeysAssets/sprites/world_tileset.png" id="1_dkuxf"]
-[ext_resource type="PackedScene" uid="uid://b7u8wwmmps4gu" path="res://scenes/player.tscn" id="2_e75gx"]
+[ext_resource type="PackedScene" uid="uid://b7u8wwmmps4gu" path="res://scenes/Player.tscn" id="2_e75gx"]
 [ext_resource type="PackedScene" uid="uid://cgg24xin1dmc3" path="res://scenes/acid.tscn" id="3_e75gx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qgbl8"]
