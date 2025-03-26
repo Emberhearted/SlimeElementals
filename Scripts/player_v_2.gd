@@ -34,7 +34,7 @@ func _physics_process(delta: float) -> void:
 		animation.play("JumpLeft")
 
 	# Handle jump right
-	if Input.is_action_just_pressed("jump") and Input.is_action_pressed("right") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jumpVelocity
 		prev_direction = 1
 		animation.play("JumpRight")

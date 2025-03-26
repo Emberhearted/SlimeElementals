@@ -1,8 +1,7 @@
-[gd_scene load_steps=83 format=3 uid="uid://lyaawodqx8yv"]
+[gd_scene load_steps=79 format=3 uid="uid://lyaawodqx8yv"]
 
 [ext_resource type="Script" uid="uid://c3hr8s4iuen7c" path="res://scripts/player_v_2.gd" id="1_3lgj3"]
 [ext_resource type="Texture2D" uid="uid://bxagmm1eajpce" path="res://assets/slimeElementalAssets/sprites/SlimeIdleAndTurn-Sheet.png" id="2_3lgj3"]
-[ext_resource type="Texture2D" uid="uid://bxkradklfwn0d" path="res://assets/slimeElementalAssets/sprites/SlimeIdleAnimation-Sheet.png" id="3_lfkem"]
 [ext_resource type="Texture2D" uid="uid://bn6so175iiaty" path="res://assets/slimeElementalAssets/sprites/SlimeJumpLeft-Sheet.png" id="3_vt2vm"]
 [ext_resource type="Texture2D" uid="uid://dqx8uo47smwbu" path="res://assets/slimeElementalAssets/sprites/SlimeJumpLeft-Sheet2.png" id="4_jp881"]
 [ext_resource type="Texture2D" uid="uid://bvuuq0g45bu4j" path="res://assets/slimeElementalAssets/sprites/SlimeJumpRight-Sheet.png" id="4_v0e60"]
@@ -19,18 +18,6 @@ region = Rect2(24, 0, 24, 24)
 [sub_resource type="AtlasTexture" id="AtlasTexture_vgw2d"]
 atlas = ExtResource("2_3lgj3")
 region = Rect2(48, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g7dd1"]
-atlas = ExtResource("3_lfkem")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1iam5"]
-atlas = ExtResource("3_lfkem")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2uc7i"]
-atlas = ExtResource("3_lfkem")
-region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8ktv1"]
 atlas = ExtResource("4_jp881")
@@ -302,6 +289,11 @@ region = Rect2(0, 0, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_it73d"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"HowDoIDeleteThis",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vt2vm")
@@ -397,20 +389,6 @@ animations = [{
 "name": &"IdleBlink",
 "speed": 10.0
 }, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g7dd1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1iam5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2uc7i")
-}],
-"loop": true,
-"name": &"IdleBoing[TooBig]",
-"speed": 5.0
-}, {
 "frames": [],
 "loop": true,
 "name": &"IdleCounter(when this ends  play random idle)",
@@ -436,35 +414,20 @@ animations = [{
 "texture": SubResource("AtlasTexture_57uip")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_57uip")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d4y35")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_d4y35")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_imn3l")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_imn3l")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_gxbv1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gxbv1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jja7e")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jja7e")
 }],
 "loop": false,
 "name": &"JumpLeft",
-"speed": 40.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -686,12 +649,11 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_it73d"]
 
 [node name="PlayerV2" type="CharacterBody2D" groups=["Player"]]
-position = Vector2(0, -12)
 script = ExtResource("1_3lgj3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_it73d")
-animation = &"JumpLeft"
+animation = &"LandRight"
 autoplay = "IdleBlink"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
