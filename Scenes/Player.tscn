@@ -1,9 +1,9 @@
 [gd_scene load_steps=43 format=3 uid="uid://b7u8wwmmps4gu"]
 
-[ext_resource type="Texture2D" uid="uid://cqb1ksryta8aa" path="res://assets/slimeElementalAssets/sprites/BlobIdleSpriteSheet.png" id="1_8303f"]
-[ext_resource type="Script" uid="uid://bxv1vrxt5cy57" path="res://scripts/player.gd" id="1_cr8r3"]
-[ext_resource type="Texture2D" uid="uid://bhk5s76bbaxec" path="res://assets/slimeElementalAssets/sprites/BlobJumpSpriteSheet2.png" id="2_5ixxa"]
-[ext_resource type="PackedScene" uid="uid://f8n3guvnhcyx" path="res://scenes/ui.tscn" id="4_dewec"]
+[ext_resource type="Texture2D" uid="uid://cqb1ksryta8aa" path="res://Assets/slimeElementalAssets/sprites/BlobIdleSpriteSheet.png" id="1_8303f"]
+[ext_resource type="Script" uid="uid://bxv1vrxt5cy57" path="res://Scripts/player.gd" id="1_cr8r3"]
+[ext_resource type="Texture2D" uid="uid://bhk5s76bbaxec" path="res://Assets/slimeElementalAssets/sprites/BlobJumpSpriteSheet2.png" id="2_5ixxa"]
+[ext_resource type="PackedScene" uid="uid://f8n3guvnhcyx" path="res://Scenes/ui.tscn" id="4_dewec"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5v66d"]
 atlas = ExtResource("2_5ixxa")

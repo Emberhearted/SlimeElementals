@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqx8uo47smwbu"
-path="res://.godot/imported/SlimeJumpLeft-Sheet2.png-31877a92279a2f2ef1a242d41ddfb4aa.ctex"
+path="res://.godot/imported/SlimeJumpLeft-Sheet2.png-4173dda229eba036a3f09bed7a2d1b6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/slimeElementalAssets/sprites/SlimeJumpLeft-Sheet2.png"
-dest_files=["res://.godot/imported/SlimeJumpLeft-Sheet2.png-31877a92279a2f2ef1a242d41ddfb4aa.ctex"]
+source_file="res://Assets/slimeElementalAssets/sprites/SlimeJumpLeft-Sheet2.png"
+dest_files=["res://.godot/imported/SlimeJumpLeft-Sheet2.png-4173dda229eba036a3f09bed7a2d1b6e.ctex"]
 
 [params]
 

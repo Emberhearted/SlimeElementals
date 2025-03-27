@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhk5s76bbaxec"
-path="res://.godot/imported/BlobJumpSpriteSheet2.png-27fabb94fc0702c8df4084b999d01646.ctex"
+path="res://.godot/imported/BlobJumpSpriteSheet2.png-87e97417bdb6d4b07cd2213e30a06f17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/slimeElementalAssets/sprites/BlobJumpSpriteSheet2.png"
-dest_files=["res://.godot/imported/BlobJumpSpriteSheet2.png-27fabb94fc0702c8df4084b999d01646.ctex"]
+source_file="res://Assets/slimeElementalAssets/sprites/BlobJumpSpriteSheet2.png"
+dest_files=["res://.godot/imported/BlobJumpSpriteSheet2.png-87e97417bdb6d4b07cd2213e30a06f17.ctex"]
 
 [params]
 
