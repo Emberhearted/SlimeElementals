@@ -24,6 +24,8 @@ func on_land_right():
 
 func _physics_process(delta: float) -> void:
 	# Add gravity
+	if Input.is_action_just_pressed("slam_down"):
+		global.health -= 1
 	if not is_on_floor():
 		velocity.y += global.gravity * delta
 	
