@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var animation = $AnimatedSprite2D
 
 const speed = 300.0
-const jumpVelocity = -325.0
+const jumpVelocity = -400.0
 
 var was_in_air = false  # Tracks if player was in the air last frame
 var prev_direction = 1   # Stores previous movement direction
@@ -31,17 +31,19 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump") and velocity.x <= 0:
 		animation.play("JumpLeftBuildUp")
 	if Input.is_action_just_released("jump") and is_on_floor():
-		velocity.y = jumpVelocity
 		prev_direction = -1
 		animation.play("JumpLeft")
+		await animation.animation_finished
+		velocity.y = jumpVelocity
 
 	# Handle jump right
 	if Input.is_action_just_pressed("jump") and velocity.x > 0:
 		animation.play("JumpRightBuildUp")
 	if Input.is_action_just_released("jump") and is_on_floor():
-		velocity.y = jumpVelocity
 		prev_direction = 1
 		animation.play("JumpRight")
+		await animation.animation_finished
+		velocity.y = jumpVelocity
 	
 	# Get movement input
 	var direction := Input.get_axis("left", "right")

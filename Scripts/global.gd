@@ -1,3 +1,5 @@
 extends Node
 
-var gravity = 700
+var gravity = 900
+
+var health = 8

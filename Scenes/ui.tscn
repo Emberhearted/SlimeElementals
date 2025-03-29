@@ -1,7 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://f8n3guvnhcyx"]
+[gd_scene load_steps=13 format=3 uid="uid://f8n3guvnhcyx"]
 
 [ext_resource type="FontFile" uid="uid://bpaup1o7ekxew" path="res://Assets/RetroislandRegular-nAvvP.otf" id="1_jxero"]
 [ext_resource type="Texture2D" uid="uid://paj72c87kofv" path="res://Assets/slimeElementalAssets/UI/HeartIcon.png" id="2_qdvrb"]
+[ext_resource type="Script" uid="uid://ctfbyautfqn7" path="res://Scripts/health_1.gd" id="3_nf4gj"]
+[ext_resource type="Script" uid="uid://b6qm252sok4us" path="res://Scripts/health_2.gd" id="4_nt8jn"]
+[ext_resource type="Script" uid="uid://74kkw4xu6jls" path="res://Scripts/health_3.gd" id="5_g0wmg"]
+[ext_resource type="Script" uid="uid://dm8d301erwakm" path="res://Scripts/health_4.gd" id="6_4vbiv"]
+[ext_resource type="Script" uid="uid://dx4mvypd5v2pe" path="res://Scripts/health_5.gd" id="7_3r70p"]
+[ext_resource type="Script" uid="uid://np3yb20cr76i" path="res://Scripts/health_6.gd" id="8_8fs27"]
+[ext_resource type="Script" uid="uid://c7dj0h7p0t6ph" path="res://Scripts/health_7.gd" id="9_whq80"]
+[ext_resource type="Script" uid="uid://dsivlosg8ofx4" path="res://Scripts/health_8.gd" id="10_kuui0"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qdvrb"]
 
@@ -29,56 +37,64 @@ text = "Score:"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 271.0
-offset_right = 137.0
-offset_bottom = 287.0
+offset_left = 4.0
+offset_top = 546.0
+offset_right = 141.0
+offset_bottom = 562.0
 theme_override_constants/separation = 1
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+[node name="Health 1" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_qdvrb")
 expand_mode = 2
 stretch_mode = 2
+script = ExtResource("3_nf4gj")
 
-[node name="TextureRect2" type="TextureRect" parent="HBoxContainer"]
+[node name="Health 2" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_qdvrb")
 expand_mode = 2
 stretch_mode = 2
+script = ExtResource("4_nt8jn")
 
-[node name="TextureRect3" type="TextureRect" parent="HBoxContainer"]
+[node name="Health 3" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_qdvrb")
 expand_mode = 2
 stretch_mode = 2
+script = ExtResource("5_g0wmg")
 
-[node name="TextureRect4" type="TextureRect" parent="HBoxContainer"]
+[node name="Health 4" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_qdvrb")
 expand_mode = 2
 stretch_mode = 2
+script = ExtResource("6_4vbiv")
 
-[node name="TextureRect5" type="TextureRect" parent="HBoxContainer"]
+[node name="Health 5" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_qdvrb")
 expand_mode = 2
 stretch_mode = 2
+script = ExtResource("7_3r70p")
 
-[node name="TextureRect6" type="TextureRect" parent="HBoxContainer"]
+[node name="Health 6" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_qdvrb")
 expand_mode = 2
 stretch_mode = 2
+script = ExtResource("8_8fs27")
 
-[node name="TextureRect7" type="TextureRect" parent="HBoxContainer"]
+[node name="Health 7" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_qdvrb")
 expand_mode = 2
 stretch_mode = 2
+script = ExtResource("9_whq80")
 
-[node name="TextureRect8" type="TextureRect" parent="HBoxContainer"]
+[node name="Health 8" type="TextureRect" parent="HBoxContainer"]
 layout_mode = 2
 texture = ExtResource("2_qdvrb")
 expand_mode = 2
 stretch_mode = 2
+script = ExtResource("10_kuui0")
