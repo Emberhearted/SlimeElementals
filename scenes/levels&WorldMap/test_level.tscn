@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://duablkg84ongt"]
+[gd_scene load_steps=5 format=4 uid="uid://duablkg84ongt"]
 
-[ext_resource type="Texture2D" uid="uid://col0bkprl0876" path="res://Assets/slimeElementalAssets/tilesets/FloorTileset.png" id="1_e75gx"]
-[ext_resource type="PackedScene" uid="uid://b7u8wwmmps4gu" path="res://Scenes/Player.tscn" id="2_e75gx"]
-[ext_resource type="PackedScene" uid="uid://cgg24xin1dmc3" path="res://Scenes/levels&WorldMap/acid.tscn" id="3_e75gx"]
+[ext_resource type="Texture2D" uid="uid://col0bkprl0876" path="res://assets/slimeElementalAssets/tilesets/FloorTileset.png" id="1_e75gx"]
+[ext_resource type="PackedScene" uid="uid://bv1rkmtsc7ruu" path="res://scenes/Player.tscn" id="2_e75gx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2snnr"]
 texture = ExtResource("1_e75gx")
@@ -31,6 +30,3 @@ tile_set = SubResource("TileSet_dkuxf")
 
 [node name="Player" parent="." instance=ExtResource("2_e75gx")]
 position = Vector2(88, 48)
-
-[node name="acid" parent="." instance=ExtResource("3_e75gx")]
-position = Vector2(-8, -12)

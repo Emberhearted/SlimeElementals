@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bpaup1o7ekxew"
-path="res://.godot/imported/RetroislandRegular-nAvvP.otf-4ad0bf659d3a94e0db8b12c50d811864.fontdata"
+path="res://.godot/imported/RetroislandRegular-nAvvP.otf-0c7b6ee7b17b9741d67bee7e39cfdbe5.fontdata"
 
 [deps]
 
-source_file="res://Assets/RetroislandRegular-nAvvP.otf"
-dest_files=["res://.godot/imported/RetroislandRegular-nAvvP.otf-4ad0bf659d3a94e0db8b12c50d811864.fontdata"]
+source_file="res://assets/RetroislandRegular-nAvvP.otf"
+dest_files=["res://.godot/imported/RetroislandRegular-nAvvP.otf-0c7b6ee7b17b9741d67bee7e39cfdbe5.fontdata"]
 
 [params]
 

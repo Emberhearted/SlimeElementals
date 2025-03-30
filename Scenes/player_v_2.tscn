@@ -1,10 +1,10 @@
 [gd_scene load_steps=49 format=3 uid="uid://lyaawodqx8yv"]
 
-[ext_resource type="Script" uid="uid://c3hr8s4iuen7c" path="res://Scripts/player_v_2.gd" id="1_3lgj3"]
-[ext_resource type="Texture2D" uid="uid://bxagmm1eajpce" path="res://Assets/slimeElementalAssets/sprites/SlimeIdleAndTurn-Sheet.png" id="2_3lgj3"]
-[ext_resource type="Texture2D" uid="uid://dqx8uo47smwbu" path="res://Assets/slimeElementalAssets/sprites/SlimeJumpLeft-Sheet2.png" id="4_jp881"]
-[ext_resource type="Texture2D" uid="uid://b1tlq3miw1j4" path="res://Assets/slimeElementalAssets/sprites/SlimeJumpRight-Sheet2.png" id="5_isop5"]
-[ext_resource type="PackedScene" uid="uid://f8n3guvnhcyx" path="res://Scenes/ui.tscn" id="5_vgw2d"]
+[ext_resource type="Script" uid="uid://c3hr8s4iuen7c" path="res://scripts/player_v_2.gd" id="1_3lgj3"]
+[ext_resource type="Texture2D" uid="uid://bxagmm1eajpce" path="res://assets/slimeElementalAssets/sprites/SlimeIdleAndTurn-Sheet.png" id="2_3lgj3"]
+[ext_resource type="Texture2D" uid="uid://dqx8uo47smwbu" path="res://assets/slimeElementalAssets/sprites/SlimeJumpLeft-Sheet2.png" id="4_jp881"]
+[ext_resource type="Texture2D" uid="uid://b1tlq3miw1j4" path="res://assets/slimeElementalAssets/sprites/SlimeJumpRight-Sheet2.png" id="5_isop5"]
+[ext_resource type="PackedScene" uid="uid://f8n3guvnhcyx" path="res://scenes/ui.tscn" id="5_vgw2d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vt2vm"]
 atlas = ExtResource("2_3lgj3")

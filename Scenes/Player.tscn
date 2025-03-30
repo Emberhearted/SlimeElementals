@@ -1,116 +1,161 @@
-[gd_scene load_steps=43 format=3 uid="uid://b7u8wwmmps4gu"]
+[gd_scene load_steps=43 format=3 uid="uid://bv1rkmtsc7ruu"]
 
-[ext_resource type="Texture2D" uid="uid://cqb1ksryta8aa" path="res://Assets/slimeElementalAssets/sprites/BlobIdleSpriteSheet.png" id="1_8303f"]
-[ext_resource type="Script" uid="uid://bxv1vrxt5cy57" path="res://Scripts/player.gd" id="1_cr8r3"]
-[ext_resource type="Texture2D" uid="uid://bhk5s76bbaxec" path="res://Assets/slimeElementalAssets/sprites/BlobJumpSpriteSheet2.png" id="2_5ixxa"]
-[ext_resource type="PackedScene" uid="uid://f8n3guvnhcyx" path="res://Scenes/ui.tscn" id="4_dewec"]
+[ext_resource type="PackedScene" uid="uid://f8n3guvnhcyx" path="res://scenes/ui.tscn" id="4_dewec"]
+
+[sub_resource type="GDScript" id="GDScript_p0vlq"]
+script/source = "extends CharacterBody2D
+
+@onready var animation = $AnimatedSprite2D
+
+const speed = 150.0
+const jumpVelocity = -300.0
+
+var yVelocity = 0
+
+func _physics_process(delta: float) -> void:
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y += global.gravity * delta
+		
+	if is_on_floor() and yVelocity > 50:
+		yVelocity = velocity.y
+		on_land()
+	else:
+		yVelocity = velocity.y
+
+	# Handle jump.
+	if Input.is_action_pressed(\"jump\") and is_on_floor():
+		animation.play(\"jumpTakeOff\")
+		velocity.y = jumpVelocity
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction := Input.get_axis(\"left\", \"right\")
+	if direction:
+		velocity.x = direction * speed
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
+
+	move_and_slide()
+
+# This carries out whenever you land
+func on_land():
+	animation.play(\"jumpLanding\")
+	await animation.animation_finished
+	if animation.animation == \"jumpLanding\":
+		animation.play(\"idle\")
+"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v6fml"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5v66d"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(64, 96, 32, 32)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3li8b"]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_thuyx"]
-atlas = ExtResource("1_8303f")
+atlas = SubResource("CompressedTexture2D_3li8b")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1lpi6"]
-atlas = ExtResource("1_8303f")
+atlas = SubResource("CompressedTexture2D_3li8b")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d644w"]
-atlas = ExtResource("1_8303f")
+atlas = SubResource("CompressedTexture2D_3li8b")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jrego"]
-atlas = ExtResource("1_8303f")
+atlas = SubResource("CompressedTexture2D_3li8b")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d08ip"]
-atlas = ExtResource("1_8303f")
+atlas = SubResource("CompressedTexture2D_3li8b")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c8gr2"]
-atlas = ExtResource("1_8303f")
+atlas = SubResource("CompressedTexture2D_3li8b")
 region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yasyn"]
-atlas = ExtResource("1_8303f")
+atlas = SubResource("CompressedTexture2D_3li8b")
 region = Rect2(64, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gkge8"]
-atlas = ExtResource("1_8303f")
+atlas = SubResource("CompressedTexture2D_3li8b")
 region = Rect2(96, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bs33e"]
-atlas = ExtResource("1_8303f")
+atlas = SubResource("CompressedTexture2D_3li8b")
 region = Rect2(0, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h78c4"]
-atlas = ExtResource("1_8303f")
+atlas = SubResource("CompressedTexture2D_3li8b")
 region = Rect2(32, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dqkch"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ur7pv"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y4r1p"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(64, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(96, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3v2ag"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(0, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jej6c"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(32, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1ej7"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(64, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oprun"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(96, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a8ls1"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(0, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qfm1y"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(32, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fulsm"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(64, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4r5pv"]
-atlas = ExtResource("2_5ixxa")
+atlas = SubResource("CompressedTexture2D_v6fml")
 region = Rect2(96, 96, 32, 32)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dqkch"]
@@ -277,7 +322,7 @@ animations = [{
 radius = 4.3735
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_cr8r3")
+script = SubResource("GDScript_p0vlq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -7)

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=4 uid="uid://d1bbtvocy4gvl"]
 
-[ext_resource type="Script" uid="uid://hiybn8c1ekbs" path="res://Scripts/world.gd" id="1_5a7ea"]
-[ext_resource type="PackedScene" uid="uid://c4q3vajhayfja" path="res://Scenes/levels&WorldMap/level_1.tscn" id="1_go701"]
+[ext_resource type="Script" uid="uid://hiybn8c1ekbs" path="res://scripts/world.gd" id="1_5a7ea"]
+[ext_resource type="PackedScene" uid="uid://c4q3vajhayfja" path="res://scenes/levels&WorldMap/level_1.tscn" id="1_go701"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_5a7ea")
