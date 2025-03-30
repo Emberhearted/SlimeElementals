@@ -8,6 +8,8 @@ const jumpVelocity = -400.0
 var was_in_air = false  # Tracks if player was in the air last frame
 var prev_direction = 1   # Stores previous movement direction
 
+
+
 # Handles landing left
 func on_land_left():
 	animation.play("LandLeft")
@@ -22,8 +24,11 @@ func on_land_right():
 	if animation.animation == "LandRight":
 		animation.play("IdleBlink")
 
+
 func _physics_process(delta: float) -> void:
 	# Add gravity
+	if global.health < 1:
+		global.player.queue_free()
 	if Input.is_action_just_pressed("slam_down"):
 		global.health -= 1
 	if not is_on_floor():
