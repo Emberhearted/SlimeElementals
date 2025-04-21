@@ -8,5 +8,5 @@ func _ready() -> void:
 	add_child(global.player)
 
 func _physics_process(delta: float) -> void:
-	if global.health < 1:
+	if global.health <= 0:
 		add_child(global.gameOver)

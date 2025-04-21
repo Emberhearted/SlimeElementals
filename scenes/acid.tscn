@@ -43,12 +43,29 @@ animations = [{
 size = Vector2(10, 12)
 
 [node name="acid" type="Area2D"]
+position = Vector2(0, -12)
 script = ExtResource("1_07fwy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jmlk6")
 autoplay = "default"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
 position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_wjwu0")
+
+[node name="RayCast_DownLeft" type="RayCast2D" parent="."]
+position = Vector2(-8, 6)
+target_position = Vector2(0, 6)
+
+[node name="RayCast_DownRight" type="RayCast2D" parent="."]
+position = Vector2(8, 6)
+target_position = Vector2(0, 6)
+
+[node name="RayCast_SideLeft" type="RayCast2D" parent="."]
+position = Vector2(0, 6)
+target_position = Vector2(-9, 0)
+
+[node name="RayCast_SideRight" type="RayCast2D" parent="."]
+position = Vector2(0, 6)
+target_position = Vector2(9, 0)
